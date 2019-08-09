@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+	
+	background-color:dodgerblue;
+	background-repeat:no-repeat;
+	animation-name: changebg ;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	
+}
+@keyframes changebg{
+	10%{background: dodgerblue}
+	20%{background:blue}
+	40%{background: purple}
+	60%{background: yellow}
+	100%{background: red}
+}
+form{
+	width: 400px;
+	background: rgba(255,255,255,1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px black;
+	
+}
+footer{
+	background: 
+}
+
+form > h2{
+	margin-bottom: 10px;
+	color: chartreuse;
+}
+
+.image{
+	margin-top: -25%;
+	margin-bottom: 3%;
+}
+form > label{
+	width: 100%;
+	font-size: 18px;
+	color: black;
+	
+}
+form > input{
+	width: 100%;
+	font-size: 10px;
+	padding: 10px 5px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #1abc9c;
+	transition: 0.3s;
+}
+form > input:focus{
+	outline:none;
+	font-size: 19px;
+}
+form > input[type="submit"]{
+	width:50%;
+	border: none;
+	background: #1abc9c; 
+	color: white;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: 0.5s;
+	
+}
+form > input[type="submit"]:hover{
+	box-shadow: 5px 5px 10px 0px black;
+}
