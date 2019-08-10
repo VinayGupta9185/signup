@@ -27,38 +27,3 @@
   </footer>	
 </body>
 </html>
-<script>
-      function check() {     
-	  var n = document.getElementById("name");
-	  var e = document.getElementById("email");
-	  var p = document.getElementById("pass");
-	    if(n.value == ''){
-			alert("Please Enter Name.");
-			n.style.borderColor = "red";
-			n.style.outline = "none";
-			n.focus();
-			return false;
-		}else if(e.value == ''){
-			n.style.borderColor = "";
-			n.style.outline = "";
-			alert("Please enter email.");
-			e.style.borderColor = "red";
-			e.style.outline = "none";
-			e.focus();
-			return false;
-		}else if(p.value == ''){
-			e.style.borderColor = "";
-			e.style.outline = "";
-			alert("Please Enter password.");
-			p.style.borderColor = "yellow";
-			p.style.outline = "none";
-			p.focus();
-			return false;
-		}else if(p.value.length < 6){
-			alert("Password can not be less than 6 character.");
-			return false;
-		}else{
-			return true ;
-		}
- }
-</script>
